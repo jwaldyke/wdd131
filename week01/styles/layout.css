@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    width: auto;
+    border: solid rgb(0, 0, 0);
+}
 body{
     display: grid;
 }
