@@ -1,0 +1,119 @@
+:root {
+    --primary-color: rgb(72, 50, 154);
+    --secondary-color: #00ff91;
+    --accent1-color: rgb(255, 255, 255);
+    --accent2-color: black;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    grid-template-columns: 5fr 2fr;
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-family:"Newsreader", serif;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border: 1px solid var(--accent1-color)
+}
+
+nav {
+    background-color: rgb(172, 220, 250);
+    color: #13036d;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin: 3px auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+
+}
+nav a:hover {
+    text-decoration:solid;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main{
+    width: auto;
+    max-width: 800px;
+    margin:0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-row: 1/2;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+h3{
+    background-color: #00ff91;
+}
+h2, h3, h4{
+    display: flex;
+    justify-content: center;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.about-me img{
+    width: 100px;
+    height: auto;
+}
+
+.about-me figcaption{
+    font-size: 1rem;
+    color: var(--accent2-color);
+    margin-left: 1px;
+}
+
+.colorado{
+   display: flex;
+   align-items: right;
+   justify-content: space-between;
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.colorado img{
+    width: 100px;
+    height: auto;
+}
+
+.colorado figcaption{
+    font-size: 1rem;
+    color: var(--accent2-color);
+    margin-left: 10px;
+}
+
+/* .card{
+    margin: 3px;
+} */
